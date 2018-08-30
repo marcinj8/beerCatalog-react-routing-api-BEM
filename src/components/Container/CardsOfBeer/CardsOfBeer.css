@@ -1,0 +1,13 @@
+.cardsOfBeer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 90%;
+  margin: 0 auto;
+}
+
+@media (min-width: 500px) {
+  .cardsOfBeer {
+    width: 88%;
+  }
+}

@@ -1,0 +1,75 @@
+.cardOfBeer {
+  font-size: .95em;
+  box-sizing: border-box;
+  cursor: pointer;
+  overflow: hidden;
+  width: 90%;
+  background: rgb(255, 243, 243);
+  height: 300px;
+  margin: 15px;
+  padding: 15px;
+  border: 1px solid rgb(255, 234, 234);
+  border-radius: 3px;
+  box-shadow: rgb(165, 164, 164) 3px 2px 5px;
+  transition: all .3s ease;
+}
+
+.cardOfBeer:hover {
+  transform: scale(1.05);
+  box-shadow: rgb(128, 128, 128) 5px 5px 15px;
+}
+
+.cardOfBeer__img {
+  width: auto;
+  height: 70%;
+}
+
+.cardOfBeer__name {
+  margin: 3px;
+  color: rgb(255, 166, 0);
+}
+
+.cardOfBeer__tagline {
+  color: gray;
+}
+
+.simillarBeers {
+  overflow: hidden;
+  text-align: center;
+  margin: 10px auto;
+  width: 25%;
+  cursor: pointer;
+  border: 1px solid rgb(221, 221, 221);
+  height: 100px;
+  padding: 5px;
+}
+
+.simillarBeers:hover {
+  background: rgb(243, 243, 243);
+  border: 1px solid rgb(192, 192, 192);
+}
+
+.simillarBeers__img {
+  height: 60px;
+  width: auto;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.simillarBeers__name {
+  font-size: .8em;
+}
+
+.simillarBeers__tagline {
+  display: none;
+}
+
+@media (min-width: 500px) {
+  .cardOfBeer {
+    width: 300px;
+  }
+  .cardOfBeer__img {
+    width: auto;
+    height: 70%;
+  }
+}

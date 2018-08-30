@@ -1,0 +1,169 @@
+.modal {
+  color: rgb(128, 128, 128);
+  overflow: hidden;
+  font-size: .85em;
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 10px 10px;
+  position: fixed;
+  left: 5%;
+  top: 2%;
+  width: 90%;
+  height: 90%;
+  border-radius: 5px;
+  background: white;
+  z-index: 101;
+  box-shadow: 8px 8px 5px rgb(109, 109, 109);
+  animation: show 0.3s ease;
+}
+
+.modal h2 {
+  color: rgb(110, 110, 110);
+  font-size: .95em;
+  margin: 10px 0 5px 0;
+}
+
+.modal h5 {
+  color: rgb(175, 175, 175);
+  margin: 10px 0 5px 0;
+}
+
+.modal__flex {
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 0%;
+}
+
+.modal__img {
+  padding: 5px;
+  width: 20%;
+  height: 300px;
+}
+
+.modal__img img {
+  max-width: 80%;
+  height: auto;
+  max-height: 300px;
+}
+
+.modal__details {
+  width: 70%;
+  text-align: left;
+  height: 70%;
+}
+
+.modal__detailsUnderscore {
+  margin: 8px 0;
+  height: 4px;
+  width: 90%;
+  background: rgb(255, 166, 0);
+  animation: animateUnderscore 1s ease;
+}
+
+.modal__beerIndex {
+  margin: 5px 5px 10px 0;
+}
+
+.modal__description {
+  text-align: justify;
+  margin: 5px 0;
+  max-height: 180px;
+  overflow: auto;
+}
+
+.modal__foodPairingList {
+  margin: 5px 5px 5px 0;
+  text-align: left;
+}
+
+.modal__foodPairingListTitle {
+  font-weight: bold;
+}
+
+.modal__foodPairingList ul {
+  margin: 0px 5px 5px 0;
+  padding: 5px 5px 5px 5px;
+  text-align: left;
+}
+
+.modal__foodPairingList li {
+  margin: 5px 5px 5px 0;
+  list-style-type: none;
+}
+
+.modal__foodPairingList li:before {
+  content: " - ";
+  text-indent: -5px;
+}
+
+.modal__propositions {
+  text-align: left;
+  padding: 10px;
+  width: 100%;
+}
+
+@media(min-width: 500px) {
+  .modal {
+    overflow-y: auto;
+    margin: 0 auto;
+    position: fixed;
+    left: calc(50% - 250px);
+    top: 5%;
+    width: 480px;
+    height: 90%;
+    border-radius: 5px;
+    background: white;
+    z-index: 101;
+  }
+  .modal__flex {
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 70%;
+  }
+  .modal h2 {
+    font-size: 1em;
+    margin: 10px 0 5px 0;
+  }
+  .modal__img {
+    padding: 15px;
+    width: 15%;
+    height: 300px;
+  }
+  .modal__img img {
+    max-width: 80%;
+    height: auto;
+    max-height: 300px;
+  }
+  .modal__details {
+    width: 75%;
+    text-align: left;
+  }
+  .modal__description {
+    font-size: .95em;
+    text-align: left;
+    margin: 10px 0;
+  }
+  .modal__foodPairingList li {
+    font-size: .9em;
+  }
+}
+
+@keyframes show {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes animateUnderscore {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 90%;
+  }
+}

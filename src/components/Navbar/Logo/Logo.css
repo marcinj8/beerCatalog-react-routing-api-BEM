@@ -1,0 +1,13 @@
+.navbar__logo--orange,
+.navbar__logo--gray {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.navbar__logo--orange {
+  color: rgb(245, 172, 37);
+}
+
+.navbar__logo--gray {
+  color: rgb(133, 133, 133);
+}
